@@ -1,0 +1,27 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>BHL Data Upload</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1>BHL Data Upload</h1>
+        <div>
+            <p>
+                Select one or more JSON files to be uploaded to the BHL page database.
+            </p>
+            <form onsubmit="return false;">
+                <input type="file" id="fileselect" name="files[]" multiple /><br/>
+                <input type="submit" value="Submit" onClick="readFile(this.form);" />
+            </form>
+        </div>
+        <hr />
+        <div id="status" style="display:none">
+            Upload processing...
+        </div>
+    </body>
+    <script src="upload.js"></script>
+</html>
